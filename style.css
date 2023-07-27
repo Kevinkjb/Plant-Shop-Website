@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import '../color.css';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+/* NAV SECTION CSS */
+
+.nav-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    height: 100px;
+}
+
+.navbar-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+.nav-item-list,
+.brand,
+a
+{
+    padding:0 1rem;
+    margin: auto 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+
+}
+.nav-item-list{
+    font-weight: 500;
+    font-size: 15px;
+}
+.nav-item-list a:hover{
+    color: var(--hover);
+    transition: .3s ease;
+}
+
+.nav-icon{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+/* HERO SECTION DESIGN */
+
+.hero-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--black);
+}
+.hero-container::before{
+    content: '';
+    background-image: url('/images/plantshop.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+}
+.hero-title{
+    position: relative;
+    color: #ffffff;  
+    font-size: 5.5rem;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 3px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: .5rem;
+}
+.hero-section span,
+.hero-section p
+{
+    position: relative;
+    color: #ffffff;
+    line-height: 0.9;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.hero-section span{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.hero-section p{
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-top: .9rem;
+    font-weight: 600;
+}
+.hero-section{
+    text-align: center;
+}
+.hero-button{
+    margin-top: 2.5rem;
+    padding: .6rem 2rem;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 1px solid #ffffff;
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.hero-button:hover{
+    color: #000000;
+    background-color: #ffffff;
+    transition: .3s ease-in;
+}
+
+/* PLANT SECTION DESIGN*/
+.plant-section-one{
+    width: 30rem;
+    background-image: url('/images/plant3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.plant-section-one,
+.plant-section-two{
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding: 2rem;
+    background-repeat: no-repeat;
+}
+.plant-section-two{
+    width: 50rem;
+    background-image: url('/images/plant2.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+.plant{
+    position: relative;
+    bottom: 5rem;
+    margin: 0 auto;
+}
+.plant-section span{
+    text-transform: uppercase;
+    color: #808080;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.plant-section h2{
+    letter-spacing: 1px;
+}
+.plant-section-button{
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    border-bottom: 2px solid #000;
+}
+.plant-section-button:hover{
+    color: var(--hover);
+    border-bottom: 2px solid green;
+    transition: .2s ease-in;
+}
+.plant-section-button::before{
+    width: 30%;
+}
+
+/* CATEGORIES SECTION */
+.categories-title{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+.categories-title::after{
+    content: "";
+    width: 5rem;
+    height: 2px;
+    left: 50%;
+    background: #4b9e22;
+    position: relative;
+    display: block;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 1rem;
+}
+.categories-section{
+    text-align: center;
+}
+.rounded-circle{
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+}
+
+.categories-section h5{
+    margin-top: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.categories-section h5:hover{
+    color: green;
+    transition: .2s ease-in;
+
+}
+
+/* BEST SELLER SECTION */
+
+.seller-section-title{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.seller-title{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-top: 6rem;
+    margin-bottom: 10px;
+
+}
+.seller-title::after{
+    content: "";
+    width: 5rem;
+    height: 2px;
+    left: 50%;
+    background: #4b9e22;
+    position: relative;
+    display: block;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 1rem;
+}
+.seller-text{
+    margin-top: 2rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text);
+}
+.box-item{
+    margin: 0 auto;
+}
+.img-fluid{
+    height: 300px;
+    width: 300px;
+}
+.product-info{
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.product-name{
+    font-weight: 500;
+}
+.product-pricing{
+    color: green;
+    font-weight: 600;
+}
+
+/* Gardening */
+.section-four-gardening{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    margin: 8rem 0 0 0;
+    height: 60vh;
+    width: 100%;
+    background-image: url("/images/insta-image10.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.section-four-gardening::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .5;
+    background-color: #000000;
+}
+.section-four-gardening{
+    color: #ffffff;
+    text-align: center;
+}
+.section-four-gardening h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+.section-four-gardening p{
+    margin-top: 1.5rem;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+
+/* NEW ARRIVALS DESIGN */
+.new-arrivals{
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.box-arrivals{
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+.arrivals-image{
+    width: 420px;
+    height: 420px;
+}
+.arrivals-title{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-top: 5.5rem;
+    margin-bottom: 10px;
+}
+.arrivals-title::after{
+    content: "";
+    width: 5rem;
+    height: 2px;
+    left: 50%;
+    background: #4b9e22;
+    position: relative;
+    display: block;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 1rem;
+}
+
+/* INSTAGRAM BOX */
+
+
+.insta-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.insta-image{
+    width: 320px;
+    height: 300px;
+}
+
+/* FOOTER SECTION DESIGN */
+.footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding: 3rem;
+}
+.logo-img{
+    width: 10rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+    margin-left: -1rem;
+}
+.footer-detail{
+    margin: 0 auto;
+    padding: 1rem 6rem;
+}
+.footer-list{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2.5rem;
+
+}
+.footer-detail p {
+    font-size: 14px;
+}
+.footer-list li{
+    padding: 8px 0;
+    font-size: 14px;
+}
+.footer-list li a{
+    text-decoration: none;
+    color: #000000;
+    padding-left: 0;
+}
+.footer-list li a:hover{
+    color: #009933;
+    transition: .3s ease;
+}
+.footer-list-icon{
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+.fa-brands{
+    padding: 0 10px;
+}
+.fa-brands:hover{
+    color: #009933;
+    transition: .3s ease;
+}
+.fa-twitter{
+    padding-left: 0;
+
+}
+.footer-list-icon li a{
+    padding: 0;
+}
