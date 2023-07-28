@@ -63,7 +63,7 @@ a
 }
 .hero-container::before{
     content: '';
-    background-image: url('/images/plantshop.jpg');
+    background-image: url('images/plantshop.jpg');
     background-size: cover;
     position: absolute;
     top: 0;
@@ -183,7 +183,7 @@ a
 /*---------------------------- PLANT SECTION DESIGN---------------------------------*/
 .plant-section-one{
     width: 30rem;
-    background-image: url('/images/plant3.jpg');
+    background-image: url('images/plant3.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -199,7 +199,7 @@ a
 }
 .plant-section-two{
     width: 50rem;
-    background-image: url('/images/plant2.jpg');
+    background-image: url('images/plant2.jpg');
     background-position: center;
     background-size: cover;
 
@@ -246,7 +246,7 @@ a
     margin: 8rem 0 0 0;
     height: 60vh;
     width: 100%;
-    background-image: url("/images/insta-image10.jpg");
+    background-image: url("images/insta-image10.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
