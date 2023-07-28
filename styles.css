@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-@import '../color.css';
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --hover: #009933;
+    --text: #808080;
+    --title-heading: #666666;
+    --newsletter: #b1b1b1;
+}
 
 *{
     box-sizing: border-box;
