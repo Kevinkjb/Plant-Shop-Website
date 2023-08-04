@@ -19,19 +19,19 @@
             <ul class="navbar-item">
 
                 <li class="nav-item-list ">
-                    <a href="#">Home</a>
+                    <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item-list">
-                    <a href="shop.html">Shop</a>
+                    <a class="nav-link" href="shop.html">Shop</a>
                 </li>
                 <li class="nav-item-list">
-                    <a href="about.html">About Us</a>
+                    <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item-list">
-                    <a href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item-list">
-                    <a href="blog.html">Blogs</a>
+                    <a class="nav-link" href="blog.html">Blogs</a>
                 </li>
                 
             </ul>
@@ -60,6 +60,11 @@
                 </li>
             </ul>
         </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
     </nav>
 
     <!-- Hero Section -->
@@ -91,36 +96,95 @@
         </div>
     </div>
 <!-- CATEGORIES SECTION -->
-    <div class="container py-5 categories-container">
+    <div class="container py-5 categories-container categories-remove">
         <h2 class="categories-title">Categories</h2>
         <div class="row">
-            <div class="col-lg-2 col-md-6 categories-section">
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 categories-section">
                 <img class="rounded-circle img-fluid" src="images/Calathea.webp" alt="">
                 <h5>Calathea plant</h5>
             </div>
-            <div class="col-lg-2 col-md-6 categories-section">
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6  categories-section">
                 <img class="rounded-circle img-fluid" src="images/plant5.jpg" alt="">
                 <h5 class="text-center">Office Plants</h5>
             </div>
-            <div class="col-lg-2 col-md-6 categories-section">
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6  categories-section">
                 <img class="rounded-circle img-fluid" src="images/plant6.jpg" alt="">
                 <h5>Artificial Flower</h5>
             </div>
-            <div class="col-lg-2 col-md-6 categories-section">
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6  categories-section">
                 <img class="rounded-circle img-fluid" src="images/plant7.webp" alt="">
                 <h5>Garden Plants</h5>
             </div>
-            <div class="col-lg-2 col-md-6 categories-section">
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6  categories-section">
                 <img class="rounded-circle img-fluid" src="images/plant8.png" alt="">
                 <h5>House Plants</h5>
             </div>
-            <div class="col-lg-2 col-md-6 categories-section">
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 categories-section">
                 <img class="rounded-circle img-fluid" src="images/plant9.jpg" alt="">
                 <h5>New Collection</h5>
             </div>
             
         </div>
+      
     </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <h2 class="categories-title">Categories</h2>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="categories-section">
+                    <img class="rounded-circle img-fluid categories-img" src="images/Calathea.webp" alt="">
+                    <h5>Calathea plant</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="categories-section">
+                    <img class="rounded-circle img-fluid categories-img" src="images/plant5.jpg" alt="">
+                    <h5 class="text-center">Office Plants</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="categories-section">
+                    <img class="rounded-circle img-fluid categories-img" src="images/plant7.webp" alt="">
+                    <h5>Garden Plants</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="categories-section">
+                    <img class="rounded-circle img-fluid categories-img" src="images/plant8.png" alt="">
+                    <h5>House Plants</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="categories-section">
+                    <img class="rounded-circle img-fluid categories-img" src="images/plant6.jpg" alt="">
+                    <h5>Artificial Flower</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="categories-section">
+                    <img class="rounded-circle img-fluid categories-img" src="images/plant9.jpg" alt="">
+                    <h5>New Collection</h5>
+                </div>
+            </div>
+            <!-- Add more carousel items for additional images -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+        <!-- Wrapper for slides -->
+
+
+
+
 
     <!-- BEST SELLER SECTION -->
     <div class="container seller-container">
@@ -205,22 +269,22 @@
             <h2 class="arrivals-title">New Arrivals</h2>
         </div>
 
-        <div class="row">
-            <div class="col-lg-4 box-arrivals">
+        <div class="row arrivals-item">
+            <div class="col-lg-4 col-md-6 col-sm-12 box-arrivals">
                 <img class="img-fluid arrivals-image" src="images/arrivals-plant5.webp" alt="">
                 <div class="product-info">
                     <p class="product-name">Jasmine</p>
                     <span class="product-pricing">$19.00</span>
                 </div>
             </div>
-            <div class="col-lg-4 box-arrivals">
+            <div class="col-lg-4 col-md-6 col-sm-12 box-arrivals">
                 <img class="img-fluid arrivals-image" src="images/arrivals-plant2.webp" alt="">
                 <div class="product-info">
                     <p class="product-name">Houseplant Philippine</p>
                     <span class="product-pricing">$20.00</span>
                 </div>
             </div>
-            <div class="col-lg-4 box-arrivals">
+            <div class="col-lg-4 col-md-6 col-sm-12 box-arrivals">
                 <img class="img-fluid arrivals-image" src="images/arrivals-plant3.webp" alt="">
                 <div class="product-info">
                     <p class="product-name">Laceleaf Peace</p>
@@ -232,38 +296,76 @@
 
 
     <!-- Instagram shop -->
-    <div class="container insta-shop">
+    <div class="container insta-shop instagram-section">
         <div class="seller-section-title">
             <h2 class="seller-title">Instagram Shop</h2>
         </div>
         <div class="row">
-            <div class="col-lg-3 insta-box">
-                <img class=" insta-image" src="images/insta-image9.jpg" alt="">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+                <img class="img-fluid main-insta-img" src="images/insta-image9.jpg" alt="">
             </div>
-            <div class="col-lg-3 insta-box">
-                <img class=" insta-image" src="images/insta-image2.webp" alt="">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+                <img class="img-fluid main-insta-img" src="images/insta-image2.webp" alt="">
             </div>
-            <div class="col-lg-3 insta-box">
-                <img class=" insta-image" src="images/insta-image3.webp" alt="">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+                <img class="img-fluid main-insta-img" src="images/insta-image3.webp" alt="">
             </div>
-            <div class="col-lg-3 insta-box">
-                <img class=" insta-image" src="images/insta-image4.jpg" alt="">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+                <img class="img-fluid main-insta-img" src="images/insta-image4.jpg" alt="">
             </div>
-            <div class="col-lg-3 insta-box">
-                <img class=" insta-image" src="images/insta-image5.webp" alt="">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+                <img class="img-fluid main-insta-img" src="images/insta-image5.webp" alt="">
             </div>
-            <div class="col-lg-3 insta-box">
-                <img class=" insta-image" src="images/insta-image6.webp" alt="">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+                <img class="img-fluid main-insta-img" src="images/insta-image6.webp" alt="">
             </div>
-            <div class="col-lg-3 insta-box">
-                <img class=" insta-image" src="images/insta-image7.png" alt="">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+                <img class="img-fluid main-insta-img" src="images/insta-image7.png" alt="">
             </div>
-            <div class="col-lg-3 insta-box">
-                <img class=" insta-image" src="images/insta-image8.jpg" alt="">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+                <img class="img-fluid main-insta-img" src="images/insta-image8.jpg" alt="">
             </div>
      
         </div>
     </div>
+    <!-- INSTAGRAM CAROUSEL SECTION WHEN ACTIVATED ON MOBILE DEVICES -->
+    <div id="instagramCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="img-fluid main-insta-img" src="images/insta-image9.jpg" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid main-insta-img" src="images/insta-image2.webp" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid main-insta-img" src="images/insta-image3.webp" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid main-insta-img" src="images/insta-image4.jpg" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid main-insta-img" src="images/insta-image5.webp" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid main-insta-img" src="images/insta-image6.webp" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid main-insta-img" src="images/insta-image7.png" alt="">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid main-insta-img" src="images/insta-image8.jpg" alt="">
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#instagramCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#instagramCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
  <!-- Footer Section -->
  <div class="container-fluid ">
@@ -378,7 +480,8 @@
         </div>
     </div>
 </div>
- 
+    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
   </body>
 </html>
